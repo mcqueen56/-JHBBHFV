@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro 2050: A Próxima Revolução Agrícola</title>
+    <style>
+        :root {
+            --fundo-escuro: #060a09;
+            --fundo-card: #0e1715;
+            --verde-neon: #00ff87;
+            --verde-suave: #52b788;
+            --texto-principal: #f1f5f9;
+            --texto-secundario: #cbd5e1;
+            --borda: rgba(0, 255, 135, 0.15);
+        }
 
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: var(--fundo-escuro);
+            color: var(--texto-principal);
+        }
+
+        /* Barra de Navegação */
+        nav {
+            background-color: rgba(6, 10, 9, 0.95);
+            border-bottom: 1px solid var(--borda);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+        nav .logo {
+            color: var(--verde-neon);
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            color: var(--texto-secundario);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            color: var(--verde-neon);
+        }
+
+        header {
+            background: linear-gradient(180deg, #0e1715 0%, #060a09 100%);
+            padding: 6rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--borda);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5rem;
+            color: var(--verde-neon);
+            letter-spacing: -1px;
+        }
+        header p {
+            margin: 1.5rem auto 0 auto;
+            font-size: 1.3rem;
+            color: var(--texto-secundario);
+            max-width: 700px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            color: var(--verde-neon);
+            font-size: 2rem;
+            border-left: 4px solid var(--verde-neon);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: var(--texto-secundario);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .tech-deep-dive {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+            margin-top: 3rem;
+        }
+
+        .tech-item {
+            background-color: var(--fundo-card);
+            border: 1px solid var(--borda);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: border-color 0.4s, transform 0.4s;
+        }
+
+        .tech-item:hover {
+            border-color: var(--verde-neon);
+            transform: translateY(-2px);
+        }
+
+        .tech-item h3 {
+            color: var(--texto-principal);
+            font-size: 1.6rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tech-item h3 span {
+            color: var(--verde-neon);
+            font-size: 1.1rem;
+            background: rgba(0, 255, 135, 0.1);
+            padding: 2px 10px;
+            border-radius: 20px;
+        }
+
+        .impacto-box {
+            background-color: rgba(0, 255, 135, 0.04);
+            border-left: 3px solid var(--verde-suave);
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .impacto-box h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--verde-suave);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background-color: #030505;
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.9rem;
+            color: #64748b;
+            border-top: 1px solid var(--borda);
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            nav { flex-direction: column; gap: 1rem; text-align: center; }
+            .tech-item { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AGRO_2050 // FUTURE</div>
+        <ul>
+            <li><a href="index.html" class="active">As Tecnologias</a></li>
+            <li><a href="empresas.html">Quem Está Fazendo</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>A Próxima Fronteira do Agro</h1>
+        <p>Uma exploração profunda pelas tecnologias conceituais e científicas que transformarão a produção de alimentos nas próximas décadas.</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="introducao">
+            <h2>O Grande Paradoxo da Humanidade</h2>
+            <p>Até a metade deste século, a Terra abrigará cerca de 10 bilhões de pessoas. Para alimentar essa população, a ciência estima que precisaremos produzir mais alimentos nos próximos 50 anos do que tudo o que já foi plantado e colhido em toda a história da nossa civilização. No entanto, temos um teto intransponível: não existem mais terras agrícolas disponíveis sem que destruamos ecossistemas vitais, e as mudanças climáticas estão tornando os regimes de chuva e calor completamente imprevisíveis.</p>
+            <p>A agricultura de precisão atual (com drones e GPS) foi um excelente primeiro passo, mas ela opera apenas otimizando o modelo tradicional. Para sobreviver ao futuro, precisamos de uma mudança disruptiva total. Precisamos de tecnologias que hoje habitam laboratórios de física quântica, engenharia genética extrema e robótica avançada. Tecnologias que ainda não estão no mercado, mas que serão as fundações de um Agro verdadeiramente Forte e Sustentável.</p>
+        </section>
+
+        <section id="tecnologias">
+            <h2>Tecnologias Radicais do Amanhã</h2>
+            <p>Abaixo, analisamos os conceitos científicos que prometem redefinir o significado de "plantar e colher".</p>
+
+            <div class="tech-deep-dive">
+                
+                <div class="tech-item">
+                    <h3>Plantas de Autonitrogenação Genética <span>Biotech</span></h3>
+                    <p>O nitrogênio é o elemento químico mais crucial para o crescimento vegetal, sendo a base dos fertilizantes sintéticos. O problema é que a fabricação desses fertilizantes consome imensas quantidades de combustíveis fósseis, e seu excesso no solo polui lençóis freáticos e oceanos. Algumas plantas (como o feijão) conseguem capturar o nitrogênio do ar naturalmente através de uma simbiose com bactérias.</p>
+                    <p>Cientistas estão trabalhando no mapeamento genético avançado para transferir essa capacidade para grandes culturas que hoje dependem 100% de adubo químico, como o milho, o trigo e o arroz. No futuro, a própria semente terá a programação genética necessária para se alimentar diretamente do oxigênio e nitrogênio da atmosfera, eliminando a dependência de indústrias químicas.</p>
+                    <div class="impacto-box">
+                        <h4>Impacto Ambiental e Econômico</h4>
+                        <p style="font-size:0.95rem; margin:0;">Redução drástica nas emissões globais de carbono e eliminação do maior custo financeiro que o produtor rural enfrenta atualmente.</p>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <h3>Enxames de Nanorrobôs Biologicamente Degradáveis <span>Robótica</span></h3>
+                    <p>Os tratores e pulverizadores atuais pesam toneladas. Ao trafegarem repetidamente pela lavoura, eles compactam o solo, esmagando os micro-organismos e impedindo a absorção de água. Além disso, a aplicação de defensivos é feita por área, atingindo plantas saudáveis sem necessidade.</p>
+                    <p>O futuro pertence aos enxames (micro-swarms) de robôs milimétricos inspirados em insetos. Movidos a energia solar ou bioquímica, milhares desses robôs caminharão pelas folhas. Se encontrarem uma lagarta ou um fungo, eles farão a eliminação física cirúrgica, planta por planta. Quando completarem seu ciclo de vida, seus corpos, feitos de polímeros orgânicos, se desintegrarão e servirão de adubo para a própria terra.</p>
+                    <div class="impacto-box">
+                        <h4>Impacto Ambiental e Econômico</h4>
+                        <p style="font-size:0.95rem; margin:0;">Alimentos completamente livres de resíduos químicos e o fim da compactação do solo, restaurando a saúde ecológica dos campos.</p>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <h3>A Internet das Plantas (IoP) via Fluorescência Sutil <span>Sensoriamento</span></h3>
+                    <p>Atualmente, descobrimos que uma lavoura está doente apenas quando as folhas mudam de color ou secam. Nesse estágio, o dano já está feito e a perda de produtividade é inevitável. As plantas se comunicam, mas não de uma forma que nossos olhos consigam ver — elas emitem sinais elétricos e químicos sutis quando entram em estresse.</p>
+                    <p>A Internet das Plantas utilizará sensores moleculares injetados na seiva ou aplicados como sprays invisíveis nas folhas. Esses sensores traduzirão os pulsos biológicos da planta em dados digitais e os enviarão diretamente para redes de inteligência artificial. A planta "avisará" o sistema que detectou a aproximação de uma praga ou que seus níveis de potássio caíram, permitindo uma intervenção preventiva milagrosa.</p>
+                    <div class="impacto-box">
+                        <h4>Impacto Ambiental e Econômico</h4>
+                        <p style="font-size:0.95rem; margin:0;">Aumento estimado de até 40% na eficiência de colheitas, antecipando problemas em dias ou semanas antes de se espalharem.</p>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <h3>Simulação Atmosférica por Computação Quântica <span>Climatologia</span></h3>
+                    <p>A meteorologia moderna falha porque o clima da Terra possui variáveis caóticas demais para os supercomputadores de silício processarem. Para o produtor, uma previsão errada de geada ou seca pode significar a falência de uma vida de trabalho.</p>
+                    <p>A computação quântica processa dados usando a física de partículas, permitindo calcular trilhões de cenários simultaneamente. Com ela, teremos modelos de simulação atmosférica perfeitos. O agricultor saberá com meses de antecedência a janela exata de minutos em que o clima estará ideal para o plantio e para a colheita, neutralizando os riscos das flutuações climáticas extremas.</p>
+                    <div class="impacto-box">
+                        <h4>Impacto Ambiental e Econômico</h4>
+                        <p style="font-size:0.95rem; margin:0;">Estabilização do preço dos alimentos no mercado global e proteção financeira total contra quebras de safra induzidas pelo clima.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="barreiras">
+            <h2>O que nos impede de chegar lá?</h2>
+            <p>Se essas tecnologias são tão fantásticas, por que ainda não estão no campo? O principal obstáculo atual é o <strong>custo de escala</strong>. Desenvolver biotecnologia avançada ou processamento quântico exige bilhões de dólares em investimentos de risco, o que restringe essas pesquisas a pouquíssimos laboratórios universitários e megacorporações do hemisfério norte.</p>
+            <p>Há também o desafio regulatório e ético. A edição genética profunda de ecossistemas (como criar plantas e micro-organismos que nunca existiram na natureza) exige debates profundos para garantir que essas espécies modificadas não causem desequilíbrios imprevistos na fauna e flora nativas.</p>
+            <p>Para construir um Agro Forte, a tecnologia do amanhã precisará ser, acima de tudo, <strong>democrática</strong>. Ela só cumprirá o seu papel de salvar o planeta se for acessível tanto para os giants do agronegócio quanto para os pequenos agricultores familiares que sustentam as mesas locais ao redor do globo.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Agro 2050 - Manifesto Tecnológico. Desenvolvido para o GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
