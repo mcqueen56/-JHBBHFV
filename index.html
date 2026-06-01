@@ -24,7 +24,6 @@
             color: var(--texto-principal);
         }
 
-        /* Barra de Navegação */
         nav {
             background-color: rgba(6, 10, 9, 0.95);
             border-bottom: 1px solid var(--borda);
@@ -56,11 +55,10 @@
             font-size: 0.9rem;
             transition: color 0.3s;
         }
-        nav a:hover {
+        nav a:hover, nav a.active {
             color: var(--verde-neon);
         }
 
-        /* Header Principal */
         header {
             background: linear-gradient(180deg, #0e1715 0%, #060a09 100%);
             padding: 6rem 1rem;
@@ -80,7 +78,6 @@
             max-width: 700px;
         }
 
-        /* Layout e Conteúdo */
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -106,7 +103,6 @@
             text-align: justify;
         }
 
-        /* Grid de Tecnologias Grandes */
         .tech-deep-dive {
             display: flex;
             flex-direction: column;
@@ -160,7 +156,6 @@
             letter-spacing: 1px;
         }
 
-        /* Rodapé */
         footer {
             background-color: #030505;
             text-align: center;
@@ -170,7 +165,6 @@
             border-top: 1px solid var(--borda);
         }
 
-        /* Responsividade */
         @media (max-width: 768px) {
             header h1 { font-size: 2.5rem; }
             nav { flex-direction: column; gap: 1rem; text-align: center; }
@@ -183,9 +177,8 @@
     <nav>
         <div class="logo">AGRO_2050 // FUTURE</div>
         <ul>
-            <li><a href="#introducao">O Desafio</a></li>
-            <li><a href="#tecnologias">As Tecnologias</a></li>
-            <li><a href="#barreiras">Os Obstáculos</a></li>
+            <li><a href="index.html" class="active">As Tecnologias</a></li>
+            <li><a href="empresas.html">Quem Está Fazendo</a></li>
         </ul>
     </nav>
 
@@ -231,7 +224,7 @@
                 <div class="tech-item">
                     <h3>A Internet das Plantas (IoP) via Fluorescência Sutil <span>Sensoriamento</span></h3>
                     <p>Atualmente, descobrimos que uma lavoura está doente apenas quando as folhas mudam de cor ou secam. Nesse estágio, o dano já está feito e a perda de produtividade é inevitável. As plantas se comunicam, mas não de uma forma que nossos olhos consigam ver — elas emitem sinais elétricos e químicos sutis quando entram em estresse.</p>
-                    <p>A Internet das Plantas utilizará sensores moleculares injetados na seiva ou aplicados como sprays invisíveis nas folhas. Esses sensores traduzirão os pulsos biológicos da planta em dados digitais e os enviarão diretamente para redes de inteligência artificial. A planta "avisará" o sistema que detectou a aproximação de uma praga ou que seus níveis de potássio caíram, permitindo uma intervenção preventiva milagrosa.</p>
+                    <p>A Internet das Plantas utilizará sensores moleculares injetados na seiva ou aplicados como sprays invisíveis nas folhas. Esses sensores traduzirão os puas biológicos da planta em dados digitais e os enviarão diretamente para redes de inteligência artificial. A planta "avisará" o sistema que detectou a aproximação de uma praga ou que seus níveis de potássio caíram, permitindo uma intervenção preventiva milagrosa.</p>
                     <div class="impacto-box">
                         <h4>Impacto Ambiental e Econômico</h4>
                         <p style="font-size:0.95rem; margin:0;">Aumento estimado de até 40% na eficiência de colheitas, antecipando problemas em dias ou semanas antes de se espalharem.</p>
@@ -255,14 +248,13 @@
             <h2>O que nos impede de chegar lá?</h2>
             <p>Se essas tecnologias são tão fantásticas, por que ainda não estão no campo? O principal obstáculo atual é o <strong>custo de escala</strong>. Desenvolver biotecnologia avançada ou processamento quântico exige bilhões de dólares em investimentos de risco, o que restringe essas pesquisas a pouquíssimos laboratórios universitários e megacorporações do hemisfério norte.</p>
             <p>Há também o desafio regulatório e ético. A edição genética profunda de ecossistemas (como criar plantas e micro-organismos que nunca existiram na natureza) exige debates profundos para garantir que essas espécies modificadas não causem desequilíbrios imprevistos na fauna e flora nativas.</p>
-            <p>Para construir um Agro Forte, a tecnologia do amanhã precisará ser, acima de tudo, <strong>democrática</strong>. Ela só cumprirá o seu papel de salvar o planeta se for acessível tanto para os gigantes do agronegócio quanto para os pequenos agricultores familiares que sustentam as mesas locais ao redor do globo.</p>
+            <p>Para construir um Agro Forte, a tecnologia do amanhã precisará ser, acima de tudo, <strong>democrática</strong>. Ela só cumprirá o seu papel de salvar o planeta se for acessível tanto para os giants do agronegócio quanto para os pequenos agricultores familiares que sustentam as mesas locais ao redor do globo.</p>
         </section>
 
     </div>
 
     <footer>
         <p>&copy; 2026 Agro 2050 - Manifesto Tecnológico. Desenvolvido para o GitHub Pages.</p>
-        <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #475569;">O futuro está sendo plantado agora.</p>
     </footer>
 
 </body>
